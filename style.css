@@ -1,0 +1,390 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+    background: linear-gradient(lightpink,pink);
+    
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+.w3-display-middle {
+  font-size: 100px;
+}
+
+.w3-display-middle-2 {
+  font-size: 50px;
+  font-family: cursive;
+  font-style: italic;
+  float: inline-end;
+}
+
+.w3-display-middle-3 {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  float: inline-end;
+}
+
+.mission {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.paragraph {
+    padding-left: 20%;
+    margin-left: 20px;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: italic;
+}
+.paragraphs {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: italic;
+}
+.paragraphss {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: italic;
+}
+
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: gold; }
+  }
+  
+  
+
+.layer1 {z-index: 10;}
+.layer2 {z-index: 8;}
+.layer3 {z-index: 6;}
+.layer4 {z-index: 4;}
+
+.buttons {
+    display: block;
+    padding: o;
+    color: lightpink;
+    border: 1px;
+    border-color: pink;
+    margin-top: 20px;
+}
+
+.button {
+    font-size: 100px;
+    display: block;
+    padding: 8px 15px;
+    animation: forwards;
+}
+
+
+.But {
+    background: linear-gradient(palevioletred, lightpink);
+    position: center;
+    border-color: white;
+    border-radius: 40px;
+    border-width: 3px;
+    background-color: linear-gradient(palevioletred, lightpink);
+    background-size: 100px;
+    font-size: xxx-large;
+    display: inline-block;
+    padding: 8px 15px;
+    font-family: cursive;
+    color: palevioletred;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;	
+}
+.button1{
+   color:#FFF;    	
+}
+
+#paragraph
+{
+  display: none;
+}
+
+#paragraphs
+{
+  display: none;
+}
+
+#paragraphss
+{
+  display: none;
+}
+
+
+
+.image {
+    width: 20%;
+    height: 20%;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+  background: linear-gradient(to top, pink, transparent);
+
+}
+
+.header1 {
+  background-color: #efd2d4;
+  background-image: url(""); 
+  height: 100px;
+
+  background-image: url("https://lh3.googleusercontent.com/J1oP-r4ULBXyXobXSqu-XVwMC4KgiRR-D5IoPUq6UqT0VpHm1HJmHi9_HFb7dE125Oq2jbtxapTHCaluiAHB4vFeZwz74qtLzWYqSZRdxt4TgzKc6V8mtQku91rpUHww84cHZTqgzw=w2400");
+  z-index: 3;
+
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  
+}
+
+nav {
+  float: right;
+  
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 70px;
+  padding-top: 23px;
+  margin-bottom: 20px;
+
+  position: relative;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active
+{
+  background: #ffffff;
+}
+
+
+
+nav a {
+  color: palevioletred;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: violet;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: palevioletred;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  padding: 8px 12px;
+  color: #ffffff;
+  border-radius: 17px;
+}
+
+
+.parallax {
+
+    /* The image used */
+    /* background-image: url("https://lh3.googleusercontent.com/yHG34aBzh5fAG2zuFUJx2mBULe9nZbKexZMoaDZtnHS53qnrky1JpBlfFZoLLh4XRju4MJXISku8BvM2YsStuyRfuHHiyjqjvy4Pogycl2iq9vjvj-TIj1gKS6o9HcesZv6rjzyZNw=w2400"); */
+    /* background-image: url("https://lh3.googleusercontent.com/YXfth2-E6Q17g0o7mQ7DFjVgRpYCiS8rJMtec7wxyPL7Kq04HOAEngCVusgF3ewGPck2PePBjFCIEZDMfMPM3TEF-cdBwo8FvuzeX7rQOn1zckCLCi8G0f_jBYQrtzO2fdzJcJ9Owg=w2400"); */
+    background-image: -moz-linear-gradient();
+    background: linear-gradient(#efd2d4 );
+    /* Set a specific height */
+    min-height: 400px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+.parallax2 {
+
+    /* The image used */
+    background-image: url("https://lh3.googleusercontent.com/yHG34aBzh5fAG2zuFUJx2mBULe9nZbKexZMoaDZtnHS53qnrky1JpBlfFZoLLh4XRju4MJXISku8BvM2YsStuyRfuHHiyjqjvy4Pogycl2iq9vjvj-TIj1gKS6o9HcesZv6rjzyZNw=w2400");
+    background-image: -moz-linear-gradient();
+    
+    /* Set a specific height */
+    min-height: 600px;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+    
+    
+
+    
+
+
+
+
+
