@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 body {
 	margin: 0;
@@ -199,13 +198,12 @@ body {
     margin-top: 20px;
 }
 
-.button {
+.button2 {
     font-size: 100px;
     display: block;
     padding: 8px 15px;
     animation: forwards;
 }
-
 
 .But {
     background: linear-gradient(palevioletred, lightpink);
@@ -380,6 +378,7 @@ nav a:hover::before {
 
 }
     
+    
 audio {
   display: none;
 }
@@ -407,16 +406,9 @@ audio {
   opacity: 0.8;
 }
 
-.fade {
+.pls .fade {
   opacity: 0.2;
   top: 0;
   left: 0;
   transform: translate(0, 0);
 }
-
-    
-
-
-
-
-
