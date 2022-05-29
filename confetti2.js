@@ -273,7 +273,24 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+const pls = document.querySelector("#buttonss");
+const icon = document.querySelector("#buttonss > i");
+const audio = document.querySelector("audio");
 
+pls.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.5;
+    audio.play();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+    
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+  pls.classList.add("fade");
+});
 
 
 
