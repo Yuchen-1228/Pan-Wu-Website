@@ -107,6 +107,7 @@ body {
 
 .w3-display-middle-2 {
   font-size: 50px;
+  font-family: cursive;
   font-style: italic;
   float: inline-end;
 }
@@ -215,6 +216,7 @@ body {
     font-size: xxx-large;
     display: inline-block;
     padding: 8px 15px;
+    font-family: cursive;
     color: palevioletred;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;	
@@ -411,8 +413,3 @@ audio {
   transform: translate(0, 0);
 }
     
-
-
-
-
-
