@@ -1,4 +1,4 @@
-<html>
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,8 @@
 
 <script src="https://kit.fontawesome.com/5b28c41f68.js" crossorigin="anonymous"></script>
 <script src="confetti2.js"></script>
-<script src="confetti.js"></script>
 
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"7131fc8e8f331a30","version":"2021.12.0","r":1,"token":"f95a87206c5140fb90f2612ffd79569d","si":100}' crossorigin="anonymous"></script>
 
 </head>
 
@@ -30,11 +30,11 @@ https://lh3.googleusercontent.com/qcV6Z1fcnHrwyGGKlRWndznRt2fA2xMWXqOX8bhcPMLhiE
                         <li class="name" style="right: 14%"><div class="typewriter">
                             <h1 style="font-family: cursive; font-style: normal; font-size: larger;">Yuchen Pan x Jovanna Wu</h1>
                         </div></li>
-                        <li style="border: 1px; border-radius: 40px; background-color: aliceblue; position: bottom; background-size: 50px; padding: 8px 12px;"><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Policies.html">Policies</a></li>
-                        <li><a href="Events.html">Events</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+                        <li style="border: 1px; border-radius: 40px; background-color: aliceblue; position: bottom; background-size: 50px; padding: 8px 12px;"><a href="C:\Users\yuche\OneDrive\桌面\Pan-Wu Website\Pan-Wu Ticket.html">Home</a></li>
+                        <li><a href="C:\Users\yuche\OneDrive\桌面\Pan-Wu Website\About.html">About</a></li>
+                        <li><a href="C:\Users\yuche\OneDrive\桌面\Pan-Wu Website\Policies.html">Policies</a></li>
+                        <li><a href="C:\Users\yuche\OneDrive\桌面\Pan-Wu Website\Events.html">Events</a></li>
+                        <li><a href="C:\Users\yuche\OneDrive\桌面\Pan-Wu Website\Contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,7 +46,13 @@ https://lh3.googleusercontent.com/qcV6Z1fcnHrwyGGKlRWndznRt2fA2xMWXqOX8bhcPMLhiE
         </br>
     </br>
 </br>
-</br>
+<center>
+    <audio src="song.mp3.mp3"></audio>
+        <button class="pls" id="buttonss">
+            <i class="fas fa-volume-up"></i>
+        </button>
+</center> 
+
 </br>
 </br>
 
@@ -66,14 +72,10 @@ https://lh3.googleusercontent.com/qcV6Z1fcnHrwyGGKlRWndznRt2fA2xMWXqOX8bhcPMLhiE
 
 </br>
 </br>
+
 </br>
 </br>
-</br>
-</br>
-<center>
-<audio src="song.mp3.mp3"></audio>
-        <button class="pls" id="buttonss"><i class="fas fa-volume-up"></i></button>
-</center>
+
 </br>
 </br>
 </br>
@@ -135,6 +137,34 @@ https://lh3.googleusercontent.com/qcV6Z1fcnHrwyGGKlRWndznRt2fA2xMWXqOX8bhcPMLhiE
         <td></td>
     </tr>
 </table>
+
+<script>
+
+const pls = document.querySelector("#buttonss");
+const icon = document.querySelector("#buttonss > i");
+const audio = document.querySelector("audio");
+
+pls.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.5;
+    audio.play();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+    
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+  pls.classList.add("fade");
+});
+
+function plays(n) {
+    audio.volume = 0.5;
+    audio.play();
+}
+
+</script>
 
 
 
